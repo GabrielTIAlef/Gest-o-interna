@@ -12,6 +12,7 @@ Nesse projeto utilizei as seguintes ferramentas e técnicas:
 - Uso e criação de API;
 - Criação de views e joins no banco de dados;
 - Criação de medidas e colunas DAX, tooltips, relacionamento dentro do PowerBI.
+  
 O painel foi separado em 3 partes, focalizando em cada necessidade em específico:
 1º Operacional: dentro dele conseguimos fazer uma gestão das tarefas que são distribuídas entre os setores e as pessoas, para assim, fazer um acompanhamento direto a quantidade de tarefas, como estão seus status, como está o desenvolvimento das equipes e pessoal e diversos outros insights;
 Alguns desafios que encontrei dentro desse projeto foram, o Gestta não disponibiliza uma API pública para conseguir puxar os dados, então, desenvolvi um meio por um get ao endpoint que conseguisse me trazer as informações que precisava, tudo isso utilizando Python com suas bibliotecas, essa informação tem alta volatidade então precisava de alta taxa de atualização, a empresa por optar por menor gasto preferiu não assinar plano premium, então, desenvolvi uma RPA que atualiza o meu conjunto de dados a cada 5 minutos e usando o agendador de tarefas faço para chamar todo bloco de código necessário para rodar todo esse fluxo;
